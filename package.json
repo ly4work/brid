@@ -18,12 +18,10 @@
     "test-cover": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest --coverage=true"
   },
-  "browser": "dist/brid.min.js",
-  "main": "dist/brid.cjs.js",
-  "module": "dist/brid.esm.js",
+  "browser": "dist/tki.min.js",
+  "main": "dist/tki.cjs.js",
+  "module": "dist/tki.esm.js",
   "dependencies": {
-    "@types/jest": "^26.0.21",
-    "jest": "^26.6.3",
     "jsdoc": "^3.6.6",
     "rollup": "^2.40.0",
     "rollup-plugin-commonjs": "^10.1.0",

@@ -8,7 +8,7 @@ export default [
   {
     input: "src/index.ts",
     output: {
-      name: "brid",
+      name: "tki",
       file: pkg.browser,
       format: "umd",
     },
@@ -20,8 +20,8 @@ export default [
     external: ["ms"],
     plugins: [typescript()],
     output: [
-      { file: pkg.main, format: "cjs" },
-      { file: pkg.module, format: "es" },
+      { file: pkg.main, format: "cjs", name: "tki" },
+      { file: pkg.module, format: "es", name: "tki" },
     ],
   },
 ];

@@ -1,8 +1,22 @@
-import type from './externals/type'
+/**
+ * Tookits 
+ * @author liyang
+ * 2021/03/24
+ */
+
+import type from './enhance/type'
 export default class Tookits {
-  public static readonly extends = (obj: Object) => {
-    Object.assign(Tookits, obj)
+  /**
+   * use 拓展中间件集成方法
+   * @param object 中间件
+   * @returns Tookits
+   */
+  public static readonly use = (object: Object) => {
+    if (!Tookits.type.isObject(object)) {
+      return Tookits
+    }
+    return Object.assign(Tookits, object)
   }
-  //  类型判断
+  //  类型判断类
   public static type = type
 }
