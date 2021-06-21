@@ -3,4 +3,20 @@ Toolkits, Just an API-Toolkits to be used in browser, nodejs, hybrid-app .etc
 
 
 ### doc构建
-toolkits-docs目录下为基于vuePress的doc构建项目
+
+1. 启动本地doc文档服务
+```
+yarn docs:dev
+```
+
+2. 构建doc文档
+
+```
+yarn docs:build
+```
+
+3. 构建npm包
+
+```
+yarn build
+```
